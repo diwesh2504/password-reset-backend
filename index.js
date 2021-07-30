@@ -32,7 +32,7 @@ app.post("/check", async (req,res)=>{
                 from: 'ananeee1818@gmail.com',
                 to: check.userid,
                 subject: 'Forgot Password',
-                html: `<div><p>Verification Code:${randomString}</p><a href="http://localhost:4040/reset">Link for Resetting the Password</a></div>`
+                html: `<div><p>Verification Code:${randomString}</p><a href="https://password-resetb.herokuapp.com/reset">Link for Resetting the Password</a></div>`
             };
             transporter.sendMail(message,function(err,info){
                 if(err){
