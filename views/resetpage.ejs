@@ -48,7 +48,7 @@
             var res={verification_code}
             ver=verification_code;
             console.log(res);
-            var r=await fetch("http://localhost:4040/validate",{
+            var r=await fetch("https://password-resetb.herokuapp.com/validate",{
                 method:"POST",
                 headers:{
                     "Content-type":"application/json"
@@ -85,7 +85,7 @@
             }
         })
         async function changePassword(){
-            var r=await fetch("http://localhost:4040/changepassword",{
+            var r=await fetch("https://password-resetb.herokuapp.com/changepassword",{
                 method:"POST",
                 headers:{
                     "Content-type":"application/json"
