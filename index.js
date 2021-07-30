@@ -106,6 +106,6 @@ app.post("/register",async (req,res)=>{
         client.close()
     }
 })
-app.listen(process.env.port ||4040,()=>{
+app.listen(process.env.PORT ||4040,()=>{
     console.log("Server Listening");
 })
