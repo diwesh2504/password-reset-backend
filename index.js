@@ -3,7 +3,7 @@ const app=express();
 const mongodb=require('mongodb');
 const MongoClient=mongodb.MongoClient;
 const cors=require('cors');
-const db_URL="mongodb://localhost:27017"
+const db_URL="mongodb+srv://admin:admin123@cluster0.sln75.mongodb.net/password_reset?retryWrites=true&w=majority"
 const nodemailer=require('nodemailer')
 const dotenv=require('dotenv')
 const crypto=require('crypto');
